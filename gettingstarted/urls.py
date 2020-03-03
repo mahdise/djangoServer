@@ -18,7 +18,6 @@ import hello.views
 
 urlpatterns = [
     path("", hello.views.index, name="index"),
-    path("db/", hello.views.db, name="db"),
     path('chatmessage/', cache_page(60 * 15)(responseAPI.as_view())),
     path('globot/', TemplateView.as_view(template_name='test.html')),
     path("admin/", admin.site.urls),

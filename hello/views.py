@@ -3,7 +3,6 @@ from django.http import HttpResponse
 from ipware import get_client_ip
 from rest_framework.response import Response
 
-from .models import Greeting
 from rest_framework.views import APIView
 
 # Create your views here.
@@ -14,14 +13,7 @@ def index(request):
     return render(request, "index.html")
 
 
-def db(request):
 
-    greeting = Greeting()
-    greeting.save()
-
-    greetings = Greeting.objects.all()
-
-    return render(request, "db.html", {"greetings": greetings})
 class responseAPI(APIView):
     '''
     {'user_input':'How are you'}
