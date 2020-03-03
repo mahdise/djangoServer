@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{%static  'style.css' %}">
+    <title>GloBot: </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      rel="stylesheet">
+    <link href="https://cdnjs.cloudfla
+    re.com/ajax/libs/bootstrap-material-design/4.0.2/bootstrap-material-design.css"
+      rel="stylesheet">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="center-text"> <img src="{%static 'update_soon.png' %}" />
+     </div>
+    <div id="body">
+        <div id="chat-circle" class="btn btn-raised">
+                <div id="chat-overlay"></div>
+            <i class="material-icons">speaker_phone</i>
+        </div>
+
+      <div class="chat-box">
+        <div class="chat-box-header">
+           GloBot
+          <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+        </div>
+        <div class="chat-box-body">
+          <div class="chat-box-overlay">
+          </div>
+          <div class="chat-logs">
+
+          </div><!--chat-log -->
+        </div>
+        <div class="chat-input">
+          <form>
+            <input type="text" id="chat-input" placeholder="Send a message..."/>
+          <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="{%static 'app.js' %}"></script>
+</body>
+</html>

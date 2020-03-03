@@ -1,0 +1,7 @@
+gunicorn
+django-heroku
+Django
+django-cors-headers
+djangorestframework
+pandas
+django-ipware
