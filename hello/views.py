@@ -47,9 +47,9 @@ class responseAPI(APIView):
                 }
             }
         final_response = response_data
-        # reply_bot = final_response['response_bot']['message']
-        # with open("history.txt", "a") as fh:
-        #     fh.write("{user}: {message}\nBot: {reply}\n".format(user=ip, message=user_input, reply=reply_bot))
+        reply_bot = final_response['response_bot']['message']
+        with open("history.txt", "a") as fh:
+            fh.write("{user}: {message}\nBot: {reply}\n".format(user='mahdi', message=user_input, reply=reply_bot))
         print(final_response)
 
         return Response(final_response)
