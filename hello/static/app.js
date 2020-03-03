@@ -30,7 +30,7 @@ $(function() {
            message : userInput
        }
 
-        const myRequest = new Request('https://boiling-river-11674.herokuapp.com//chatmessage/', {
+        const myRequest = new Request('https://boiling-river-11674.herokuapp.com/chatmessage/', {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json'

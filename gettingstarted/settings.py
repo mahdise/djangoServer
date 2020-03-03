@@ -33,6 +33,7 @@ CORS_ORIGIN_WHITELIST = [
     "https://sub.example.com",
     "http://localhost:63342",
     "https://powerful-lowlands-93544.herokuapp.com",
+    "https://boiling-river-11674.herokuapp.com",
 
 ]
 
